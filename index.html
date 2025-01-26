@@ -10,12 +10,41 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <style type="text/css">
+      :root {
+        --gradient:linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+;
+      }
+      body {
+        min-height: 100vh;
+        /*background-color: #eaeaea;*/
+        background-color: #D9AFD9;
+        background-image:var(--gradient) ;
+        background-size: 200%;
+        animation: wafe 20s infinite alternate;
+        
+      }
+      @keyframes wafe{
+        0% {
+          background-position: left;  
+        }
+        100% {
+          background-position: right;   
+        }
+      }
+      .text1 {
+        color: teal;
+      }
+      .text2 {
+        color:white;
+      }
+    </style>
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-light shadow">
+    <!-- <nav class="navbar navbar-expand-lg bg-light shadow-lg">
       <div class="container">
-        <a class="navbar-brand" href="#">PKM | TRENGGALEK</a>
+        <a class="navbar-brand text1" href="#">PKM | TRENGGALEK</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -29,7 +58,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <!-- <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
@@ -56,7 +85,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link disabled">Disabled</a>
-            </li> -->
+            </li>
           </ul>
           <form class="d-flex" role="search">
             <input
@@ -71,21 +100,22 @@
           </form>
         </div>
       </div>
-    </nav>
+    </nav> -->
     <!-- end of navbar -->
     <!-- main page -->
+    <br><br><br>
     <div class="container mt-4">
-      <h3 class="text-center">
+      <h3 class="text-center text2">
         MONITORING KINERJA BULANAN <br />
         PUSKESMAS TRENGGALEK 2025
       </h3>
       <hr />
       <div class="row mt-4">
         <div class="col mt-2">
-          <div class="card shadow">
+          <div class="card shadow-lg">
             <div class="accordion accordion-flush" id="accordionFlushExample1">
               <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
+                <h2 class="accordion-header text2" id="flush-headingOne">
                   <button
                     class="accordion-button collapsed text-center"
                     type="button"
@@ -116,12 +146,12 @@
           </div>
         </div>
         <div class="col mt-2">
-          <div class="card shadow">
+          <div class="card shadow-lg">
             <div class="accordion accordion-flush" id="accordionFlushExample2">
               <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
+                <h2 class="accordion-header text2" id="flush-headingTwo">
                   <button
-                    class="accordion-button collapsed text-center"
+                    class="accordion-button collapsed text-center "
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseTwo"
@@ -150,8 +180,11 @@
             </div>
           </div>
         </div>
+        
+      </div>
+      <div class="row">
         <div class="col mt-2">
-          <div class="card shadow">
+          <div class="card shadow-lg">
             <div class="accordion accordion-flush" id="accordionFlushExample3">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingThree">
@@ -193,7 +226,7 @@
 <!--       </div> -->
 <!--       <div class="row mt-4"> -->
         <div class="col mt-2">
-            <div class="card shadow">
+            <div class="card shadow-lg">
                 <div class="accordion accordion-flush" id="accordionFlushExample4">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingFour">
@@ -231,8 +264,12 @@
                 </div>
               </div>
         </div>
+        
+      </div>
+
+      <div class="row">
         <div class="col mt-2">
-            <div class="card shadow">
+            <div class="card shadow-lg">
                 <div class="accordion accordion-flush" id="accordionFlushExample5">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingFive">
@@ -271,7 +308,7 @@
               </div>
         </div>
         <div class="col mt-2">
-            <div class="card shadow">
+            <div class="card shadow-lg">
                 <div class="accordion accordion-flush" id="accordionFlushExample6">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingSix">
@@ -302,23 +339,23 @@
                 </div>
               </div>
         </div>
-    </div>
+      </div>
     </div>
     <!-- end main -->
      <!-- FOoter -->
-      <footer class="fixed-bottom">
+      <footer class="mt-4">
         <div class="container">
           <div class="row g-4 align-items-center">
             <div class="col-md-6 text-center text-md-start mb-md-0">
-              <span class="text-danger"
-                ><a href="#"
-                  ><i class="fas fa-copyright text-light me-2"></i>Skrining
+              <span class=""
+                ><p 
+                  ><i class="fas fa-copyright me-2"></i>
                   Puskesmas Trenggalek</a
                 >
                 , All right reserved.</span
               >
             </div>
-            <div class="col-md-6 text-center text-md-end text-danger">
+            <div class="col-md-6 text-center text-md-end ">
               Designed By
               <a
                 class="border-bottom"
@@ -338,3 +375,4 @@
     ></script>
   </body>
 </html>
+
